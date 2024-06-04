@@ -91,7 +91,7 @@ class MainActivity: FlutterFragmentActivity() {
 -dontwarn com.stripe.android.pushProvisioning.PushProvisioningActivityStarter
 -dontwarn com.stripe.android.pushProvisioning.PushProvisioningEphemeralKeyProvider
 ```
-- For  add the following to your Info.plist:
+- For Ios device following to your Info.plist:
 ```
 <key>NSCameraUsageDescription</key>
 <string>Scan your card to add it automatically</string>
