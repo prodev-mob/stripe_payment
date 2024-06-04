@@ -1,6 +1,6 @@
 # Flutter Stripe Payment Gateway
 
-A new Flutter project.
+This README file provides a step-by-step guide on integrating Stripe Payment gateway into your Flutter application. Follow the instructions below to set up and configure stripe payment for Android platform.
 
 ## Getting Started
 
@@ -90,6 +90,14 @@ class MainActivity: FlutterFragmentActivity() {
 -dontwarn com.stripe.android.pushProvisioning.PushProvisioningActivityStarter$Error
 -dontwarn com.stripe.android.pushProvisioning.PushProvisioningActivityStarter
 -dontwarn com.stripe.android.pushProvisioning.PushProvisioningEphemeralKeyProvider
+```
+- For  add the following to your Info.plist:
+```
+<key>NSCameraUsageDescription</key>
+<string>Scan your card to add it automatically</string>
+<key>NSCameraUsageDescription
+&lt;string&gt;To scan cards&lt;/string&gt;</key>
+<string>To scan cards</string>
 ```
 
 3. Create Stripe Account
