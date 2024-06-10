@@ -4,7 +4,7 @@ This README file provides a step-by-step guide on integrating Stripe Payment gat
 
 ## Getting Started
 
-1. Dependencies
+## 1. Dependencies
 - Add below dependencies in pubspec.yaml
 
 ```
@@ -12,7 +12,7 @@ This README file provides a step-by-step guide on integrating Stripe Payment gat
   flutter_dotenv: ^5.1.0
   http: ^1.2.1
 ```
-2. Add this permission in AndroidManifest.xml file
+## 2. Add this permission in AndroidManifest.xml file
   - Use Android 5.0 (API level 21) and above
   - Use Kotlin version 1.5.0 and above
   - Requires Android Gradle plugin 8 and higher
@@ -100,7 +100,7 @@ class MainActivity: FlutterFragmentActivity() {
 <string>To scan cards</string>
 ```
 
-3. Create Stripe Account
+## 3. Create Stripe Account
 - First, you need a Stripe account.
    - https://dashboard.stripe.com/register
 
@@ -108,13 +108,13 @@ class MainActivity: FlutterFragmentActivity() {
    Follow the steps here
   - https://docs.stripe.com/payments/accept-a-payment?platform=ios&ui=payment-sheet#setup-server-side
  
-4. Now make .env file to store Publishable key and stripe key
+## 4. Now make .env file to store Publishable key and stripe key
 ```
 STRIPE_PUBLISH_KEY = 'YOUR PUBLISH KEY',
 STRIPE_SECRET_KEY = 'YOUR SECRET KEY'
 ```
 
-5. Code Set Up
+## 5. Code Set Up
 - initialize Stripe in your main file
   ```
    void main() async {
@@ -125,7 +125,7 @@ STRIPE_SECRET_KEY = 'YOUR SECRET KEY'
     runApp(const MyApp());
   }
   ```
-6. Create PaymentIntent
+## 6. Create PaymentIntent
  ```
  Future<Map<String, dynamic>>  createPaymentIntent() async {
     try {
